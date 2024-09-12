@@ -17,7 +17,6 @@ num = int(input('informe um valor p/ gerar a tabuada : '))
 while (x <= 10):
   print(f'{num * x}')
   x+=1
-"""
 
 nome = None 
 while True: 
@@ -28,3 +27,11 @@ while True:
     print(f'ola {nome}')
     
 print('até logo')
+"""
+
+while True:
+    nome = input('digite o nome do aluno ou pressione x para sair : ' )
+    if(nome == 'x' or nome == 'X'):
+        print(f'programa encerrado')
+        break
+    else print(f)
