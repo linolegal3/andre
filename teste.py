@@ -1,43 +1,44 @@
-num1 = int(input("Informe o primeiro valor: "))
-num2 = int(input("Informe o segundo valor: "))
+import os
+os.system('cls')
+"""
 
-acertos = 0
+n1= n2=0
+n1=int (input('informe um valor : '))
+n2=int (input('informe outro valor : '))
 
-print(f"\nPrimeiro valor: {num1}")
-print(f"Segundo valor: {num2}\n")
+print(F'a soma entre {n1} + {n2} é :{n1+n2}')
 
-if num1 == num2:
-    print(f"{num1} == {num2} : 1")
-    acertos += 1
-else:
-    print(f"{num1} == {num2} : 0")
+valor = 1234.202456
+print (f'o resultado é {valor:.2f}')
 
-if num1 != num2:
-    print(f"{num1} != {num2} : 1")
-    acertos += 1
-else:
-    print(f"{num1} != {num2} : 0")
+num = x = 0
+num = int(input('informe um valor p/ gerar a tabuada : '))
 
-if num1 > num2:
-    print(f"{num1} > {num2} : 1")
-    acertos += 1
-else:
-    print(f"{num1} > {num2} : 0")
+while (x <= 10):
+  print(f'{num * x}')
+  x+=1
 
-if num1 < num2:
-    print(f"{num1} < {num2} : 1")
-    acertos += 1
-else:
-    print(f"{num1} < {num2} : 0")
+nome = None 
+while True: 
+  nome = input('informe seu nome ou ptessione x para sair : ')
+  if(nome == 'x' or nome == 'X'):
+    break
+  else:
+    print(f'ola {nome}')
+    
+print('até logo')
+"""
 
-if num1 >= num2:
-    print(f"{num1} >= {num2} : 1")
-    acertos += 1
-else:
-    print(f"{num1} >= {num2} : 0")
-
-if num1 <= num2:
-    print(f"{num1} <= {num2} : 1")
-    acertos += 1
-else:
-    print(f"{num1} <= {num2} : 0")
+while True:
+    nome = input('digite o nome do aluno ou pressione x para sair : ' )
+    if(nome == 'x' or nome == 'X'):
+        print('*' * 36)
+        print('sistema encerrado')
+        print('*' * 36)
+        break
+    
+    nota1 = float(input("primeira nota : "))
+    nota2 = float(input("segunda nota : "))
+    
+    media = (nota1 + nota2) /2
+    print(f'a nota final de {nome} é {media}')
